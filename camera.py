@@ -7,8 +7,10 @@ model = FacialExpressionModel("model.json", "model_weights.h5")
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 class VideoCamera(object):
+
     def __init__(self):
-        self.video = cv2.VideoCapture('C:/Users/moham/Desktop/Python project/F1_RECO_EMO/f1.mkv')
+    
+        self.video = cv2.VideoCapture('/Desktop/F1_RECO_EMO/f1.mkv')
 
     def __del__(self):
         self.video.release()
